@@ -7,9 +7,13 @@ F12::Suspend
 WheelUp::
 	if WinActive("ahk_exe dota2.exe")
 		Send {4}
+	else
+		Send {WheelUp}
 	return
 
 WheelDown::
 	if WinActive("ahk_exe dota2.exe")
 		Send {6}
+	else
+		Send {WheelDown}
 	return
